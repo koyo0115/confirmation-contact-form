@@ -128,7 +128,7 @@
             <option disabled selected>選択してください</option>
             @foreach($categories as $category)
             <option value="{{ $category->id }}" {{ old('category_id')==$category->id ? 'selected' : '' }}>{{
-              $category->content }}</option>
+              $category->name }}</option>
             @endforeach
           </select>
         </div>
